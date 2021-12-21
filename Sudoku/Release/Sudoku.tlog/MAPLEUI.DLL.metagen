@@ -1,0 +1,204 @@
+  MapleUI.MapleEquip.resources - Embedded, ContainedInManifestFile, 
+  MapleUI.MapleEquipSet.resources - Embedded, ContainedInManifestFile, 
+  MapleUI.MapleItem.resources - Embedded, ContainedInManifestFile, 
+  MapleUI.MapleMessageBox.resources - Embedded, ContainedInManifestFile, 
+  MapleUI.MapleResource.resources - Embedded, ContainedInManifestFile, 
+  MapleUI.MapleSound.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly MapleUI, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class MapleUI.MapleEquip: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label labelName : Public
+    System.Windows.Forms.Label labelTip : Public
+    System.Windows.Forms.Label labelAtkAdd : Public
+    System.Windows.Forms.Label labelReqLevel : Public
+    System.Windows.Forms.Label labelReqStr : Public
+    System.Windows.Forms.Label labelReqDex : Public
+    System.Windows.Forms.Label labelReqInt : Public
+    System.Windows.Forms.Label labelReqLuk : Public
+    System.Windows.Forms.PictureBox pbIcon : Public
+    System.Windows.Forms.Label labelDefInc : Public
+    System.Windows.Forms.Label labelBossDamageInc : Public
+    System.Windows.Forms.Label labelDefIgnore : Public
+    System.Windows.Forms.Label labelDesc : Public
+  Methods:
+    setName(String): PrivateScope, Public, HideBySig
+    setTip(String): PrivateScope, Public, HideBySig
+    setIcon(Image): PrivateScope, Public, HideBySig
+    setReqLevel(Byte): PrivateScope, Public, HideBySig
+    setReqStr(Int16): PrivateScope, Public, HideBySig
+    setReqInt(Int16): PrivateScope, Public, HideBySig
+    setReqDex(Int16): PrivateScope, Public, HideBySig
+    setReqLuk(Int16): PrivateScope, Public, HideBySig
+    setAtkAdd(Int32): PrivateScope, Public, HideBySig
+    setDefInc(Int32): PrivateScope, Public, HideBySig
+    setBossDamageInc(Int32): PrivateScope, Public, HideBySig
+    setDefIgnore(Int32): PrivateScope, Public, HideBySig
+    setDesc(String): PrivateScope, Public, HideBySig
+    getName(): PrivateScope, Public, HideBySig
+    getTip(): PrivateScope, Public, HideBySig
+    getIcon(): PrivateScope, Public, HideBySig
+    getReqLevel(): PrivateScope, Public, HideBySig
+    getReqStr(): PrivateScope, Public, HideBySig
+    getReqInt(): PrivateScope, Public, HideBySig
+    getReqDex(): PrivateScope, Public, HideBySig
+    getReqLuk(): PrivateScope, Public, HideBySig
+    getDefInc(): PrivateScope, Public, HideBySig
+    getBossDamageInc(): PrivateScope, Public, HideBySig
+    getDefIgnore(): PrivateScope, Public, HideBySig
+    getDesc(): PrivateScope, Public, HideBySig
+    getAtkAdd(): PrivateScope, Public, HideBySig
+    clone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    close(): PrivateScope, Public, HideBySig
+Class MapleUI.MapleEquipSet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MapleUI.MapleEquip
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label labelSetName : Public
+    System.Windows.Forms.Label labelSetEquip : Public
+    System.Windows.Forms.Label labelSetEffect : Public
+  Methods:
+    setSetName(String): PrivateScope, Public, HideBySig
+    setSetEquip(String): PrivateScope, Public, HideBySig
+    setSetEffect(String): PrivateScope, Public, HideBySig
+    getSetName(): PrivateScope, Public, HideBySig
+    getSetEquip(): PrivateScope, Public, HideBySig
+    getSetEffect(): PrivateScope, Public, HideBySig
+    clone(): PrivateScope, Public, Virtual, HideBySig
+Class MapleUI.MapleItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Drawing.Image, System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.PictureBox pbIcon : Public
+    System.Windows.Forms.Label labelName : Public
+    System.Windows.Forms.Label labelTip : Public
+    System.Windows.Forms.Label labelDesc : Public
+  Methods:
+    setImage(Image): PrivateScope, Public, HideBySig
+    setName(String): PrivateScope, Public, HideBySig
+    setTip(String): PrivateScope, Public, HideBySig
+    setDesc(String): PrivateScope, Public, HideBySig
+    getImage(): PrivateScope, Public, HideBySig
+    getName(): PrivateScope, Public, HideBySig
+    getTip(): PrivateScope, Public, HideBySig
+    getDesc(): PrivateScope, Public, HideBySig
+    clone(): PrivateScope, Public, HideBySig
+    close(): PrivateScope, Public, HideBySig
+Class MapleUI.MapleMessageBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label labelMessage : Public
+  Methods:
+    setMessage(String): PrivateScope, Public, HideBySig
+    getMessage(): PrivateScope, Public, HideBySig
+    SendMessage(IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    ReleaseCapture(): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class MapleUI.MapleResource: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Resources.ResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.Drawing.Bitmap ButtonOKDisable 'get ' : 
+    System.Drawing.Bitmap ButtonOKMouseOver 'get ' : 
+    System.Drawing.Bitmap ButtonOKNormal 'get ' : 
+    System.Drawing.Bitmap ButtonOKPress 'get ' : 
+    System.Drawing.Bitmap Equip 'get ' : 
+    System.Drawing.Bitmap Equip_Set 'get ' : 
+    System.Drawing.Bitmap Item 'get ' : 
+    System.Drawing.Bitmap MessageBox 'get ' : 
+  Methods:
+    get_ResourceManager(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonOKDisable(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonOKMouseOver(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonOKNormal(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonOKPress(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Equip(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Equip_Set(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Item(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MessageBox(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class MapleUI.MapleSound: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Resources.ResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.IO.UnmanagedMemoryStream Buff 'get ' : 
+    System.IO.UnmanagedMemoryStream ButtonMouseClick 'get ' : 
+    System.IO.UnmanagedMemoryStream ButtonMouseOver 'get ' : 
+    System.IO.UnmanagedMemoryStream BuyShopItem 'get ' : 
+    System.IO.UnmanagedMemoryStream CharSelect 'get ' : 
+    System.IO.UnmanagedMemoryStream DlgNotice 'get ' : 
+    System.IO.UnmanagedMemoryStream DragEnd 'get ' : 
+    System.IO.UnmanagedMemoryStream DragStart 'get ' : 
+    System.IO.UnmanagedMemoryStream EnchantFailure 'get ' : 
+    System.IO.UnmanagedMemoryStream EnchantSuccess 'get ' : 
+    System.IO.UnmanagedMemoryStream Invite 'get ' : 
+    System.IO.UnmanagedMemoryStream JobChanged 'get ' : 
+    System.IO.UnmanagedMemoryStream LevelUp 'get ' : 
+    System.IO.UnmanagedMemoryStream MenuDown 'get ' : 
+    System.IO.UnmanagedMemoryStream MenuUp 'get ' : 
+    System.IO.UnmanagedMemoryStream PickUpItem 'get ' : 
+    System.IO.UnmanagedMemoryStream Portal 'get ' : 
+    System.IO.UnmanagedMemoryStream QuestAlert 'get ' : 
+    System.IO.UnmanagedMemoryStream QuestClear 'get ' : 
+    System.IO.UnmanagedMemoryStream RaceSelect 'get ' : 
+    System.IO.UnmanagedMemoryStream RollDown 'get ' : 
+    System.IO.UnmanagedMemoryStream RollUp 'get ' : 
+    System.IO.UnmanagedMemoryStream ScrollOpen 'get ' : 
+    System.IO.UnmanagedMemoryStream ScrollUp 'get ' : 
+    System.IO.UnmanagedMemoryStream SelectMap 'get ' : 
+    System.IO.UnmanagedMemoryStream Tab 'get ' : 
+    System.IO.UnmanagedMemoryStream Tombstone 'get ' : 
+    System.IO.UnmanagedMemoryStream Transform 'get ' : 
+    System.IO.UnmanagedMemoryStream UseShopItem 'get ' : 
+    System.IO.UnmanagedMemoryStream WorldSelect 'get ' : 
+  Methods:
+    get_ResourceManager(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Buff(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonMouseClick(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonMouseOver(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_BuyShopItem(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CharSelect(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DlgNotice(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DragEnd(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DragStart(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_EnchantFailure(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_EnchantSuccess(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Invite(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_JobChanged(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LevelUp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MenuUp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_PickUpItem(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Portal(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_QuestAlert(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_QuestClear(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RaceSelect(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RollDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RollUp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ScrollOpen(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ScrollUp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SelectMap(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Tab(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Tombstone(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Transform(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_UseShopItem(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_WorldSelect(): PrivateScope, Public, Static, HideBySig, SpecialName

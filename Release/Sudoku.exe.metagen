@@ -1,0 +1,301 @@
+  Sudoku.AboutForm.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.GameResource.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.GeneratorForm.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.HelpForm.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.MainForm.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.ResultDialog.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.ScoreBoardForm.resources - Embedded, ContainedInManifestFile, 
+  Sudoku.SplashForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Sudoku, Version=0.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly MapleUI, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=None, flags=None
+Assembly SkinH_CS, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Interop.WMPLib.1.0, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=None, flags=None
+Class SudokuGenerator.GeneratorInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addPuzzle(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getMaxPuzzle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setOutputDirectory(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class SudokuGenerator.BoardBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getNumber(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setNumber(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    wipeGrid(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class SudokuGenerator.Board: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SudokuGenerator.Board): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    canBePlacedAtPosition(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    canPlaceAtSubGrid(Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    copyBoard(Board): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    fromString(String): PrivateScope, Public, Static, HideBySig
+    getNumber(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setNumber(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    toString(Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    toString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    initBoard(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class SudokuGenerator.BoardPoker: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(SudokuGenerator.Board): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    process(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class SudokuGenerator.MirrorBoardPoker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :SudokuGenerator.BoardPoker
+    Void .ctor(SudokuGenerator.Board): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    process(): PrivateScope, Public, Virtual, HideBySig
+Class SudokuGenerator.BoardSolver: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SudokuGenerator.Board): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    canBeSolve(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    countSolution(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    tryPoint(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EWException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getFirstRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getSecondRef(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    defaultDouble(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    defaultInteger(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    defaultString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    errorInteger(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    forceExit(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getEW(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getExceptionType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getNull(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class SudokuGenerator.BoardGenerator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    generatePuzzleBoard(GeneratorType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    generatePuzzleBoard(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    generateSolutionBoard(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getPuzzleBoard(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getSolutionBoard(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class SudokuGenerator.WriteGeneratorLog: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class SudokuGenerator.AllTaskFinish: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class SudokuGenerator.LogEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    SudokuGenerator.AllTaskFinish taskFinishEvent: SpecialName
+    SudokuGenerator.WriteGeneratorLog generatorLogEvent: SpecialName
+  Methods:
+    add_generatorLogEvent(WriteGeneratorLog): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_generatorLogEvent(WriteGeneratorLog): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_taskFinishEvent(AllTaskFinish): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_taskFinishEvent(AllTaskFinish): PrivateScope, Public, Static, HideBySig, SpecialName
+    writeLog(String): PrivateScope, Public, Static, HideBySig
+    taskFinish(): PrivateScope, Public, Static, HideBySig
+Class SudokuGenerator.SudokuWorker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, SudokuGenerator.GeneratorInformation): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(SudokuGenerator.GeneratorInformation): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    work(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class SudokuGenerator.Generator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    generate(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    watchDog(): PrivateScope, Public, Static, HideBySig
+    stopAll(): PrivateScope, Public, Static, HideBySig
+Class Sudoku.SudokuLocation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getColumn(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Sudoku.SudokuTable: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Sudoku.SudokuLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getGameTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getOriginTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getSolveTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getMarkTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getHintTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getErrorTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getGameTableString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getOriginTableString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getSolveTableString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getMarkTableString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getHintTableString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getErrorTableString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getHistory(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getRemainingHint(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    requestHint(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    checkCurrentLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    checkTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    hasError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addHistory(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    pencil(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clearAllPencil(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    initGameTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clearFillNumber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    undo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getCurrentLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    isSelect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setNoSelect(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    copySolve(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setRemainingHint(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    fillIntegerTable(Int32[,], String): PrivateScope, Public, Static, HideBySig
+    fillBooleanTable(Boolean[,], String): PrivateScope, Public, Static, HideBySig
+    setCurrentLocation(ValueType Point IsBoxed): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setCurrentLocation(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getMaxHintQuota(): PrivateScope, Public, Static, HideBySig
+    drawTable(Graphics): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Sudoku.GameManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    getInstance(): PrivateScope, Public, Static, HideBySig
+    getRecordFileName(): PrivateScope, Public, Static, HideBySig
+    newGame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    togglePause(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    giveUp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cleanUp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    complete(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    hasSave(): PrivateScope, Public, Static, HideBySig
+    loadGame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    saveGame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getPlayingTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    gameTimerTick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getTable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getStatus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getScore(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getMinScore(): PrivateScope, Public, Static, HideBySig
+    getMaxScore(): PrivateScope, Public, Static, HideBySig
+    getSolveStep(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addSolveStep(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    changeLevel(SudokuLevel): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Sudoku.SoundManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    getInstance(): PrivateScope, Public, Static, HideBySig
+    playBGM(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    mciMusic(String): PrivateScope, Public, Static, HideBySig
+    getSoundPlayer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getWindowsMediaPlayer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    isMuteBGM(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    toggleMuteBGM(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    mciSendString(String, StringBuilder, Int32, IntPtr): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+Class Sudoku.AboutForm: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Sudoku.PlayerInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Int32, Int32, Sudoku.SudokuLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IComparable`1[Sudoku.PlayerInformation]
+  Methods:
+    getName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getScore(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getSolveTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getSolveLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(PlayerInformation): PrivateScope, Public, Virtual, HideBySig
+Class Sudoku.ScoreBoard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    getInstance(): PrivateScope, Public, Static, HideBySig
+    getMaxNameLength(): PrivateScope, Public, Static, HideBySig
+    canAdd(Int32, Int32, SudokuLevel): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    addPlayer(PlayerInformation): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    removePlayer(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    clear(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getPlayerData(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Sudoku.ResourceHandler: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Methods:
+    getInstance(): PrivateScope, Public, Static, HideBySig
+    loadCustomCursor(String): PrivateScope, Public, Static, HideBySig
+    manageArrayToNativeArray<unsigned char>(Byte[]): PrivateScope, Public, Static, HideBySig
+    getFontFamily(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getDisplayLargeTitleFont(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getDisplayTitleFont(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getDisplayContentFont(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getGameResource(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadCursorFromFile(String): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    AddFontMemResourceEx(IntPtr, UInt32, IntPtr, UInt32*): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Sudoku.ScoreBoardForm: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    loadScoreBoard(): PrivateScope, Public, HideBySig
+    applyFont(): PrivateScope, Public, HideBySig
+Class Sudoku.GeneratorForm: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    applyFont(): PrivateScope, Public, HideBySig
+Class Sudoku.HelpForm: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    applyFont(): PrivateScope, Public, HideBySig
+Class Sudoku.ResultDialog: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Int32, Int32, Sudoku.SudokuLevel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    applyFont(): PrivateScope, Public, HideBySig
+Class Sudoku.ConsoleHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    getInstance(String): PrivateScope, Public, Static, HideBySig
+    isAllocate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    setupConsole(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    removeConsole(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    toggleConsole(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Sudoku.SplashForm: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Sudoku.MainForm: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Struct SudokuGenerator.GeneratorType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+Struct Sudoku.GameStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+Struct Sudoku.SudokuLevel: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+Struct Sudoku.SudokuTool: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName

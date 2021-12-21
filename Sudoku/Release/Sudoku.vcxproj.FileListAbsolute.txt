@@ -1,0 +1,12 @@
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.vcxprojAssemblyReference.cache
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.vcxproj.ResolveComReference.cache
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.AboutForm.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.GameResource.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.GeneratorForm.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.HelpForm.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.MainForm.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.ResultDialog.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.ScoreBoardForm.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.SplashForm.resources
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.vcxproj.GenerateResource.cache
+G:\VSProject\Sudoku\Sudoku\Release\Sudoku.vcxproj.CopyComplete

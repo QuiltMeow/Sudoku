@@ -1,0 +1,9 @@
+﻿E:\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2705,5): warning MSB3305: 正在處理路徑 "C:\WINDOWS\system32\wmp.dll" 中的 COM 參考 "WMPLib.1.0.dll"。類型程式庫匯入工具在沒有有效傳回類型的類型 'sessionPlaylistCount' 上遇到屬性 getter 'WMPLib.IWMPNowPlayingHelperDispatch'。匯入工具會嘗試匯入此屬性做為方法。
+E:\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2705,5): warning MSB3305: 正在處理路徑 "C:\WINDOWS\system32\wmp.dll" 中的 COM 參考 "WMPLib.1.0.dll"。在 'IWMPGraphEventHandler.NotifyAcquireCredentials' 中至少有一個引數無法由執行階段封送處理器進行封送處理。這個引數將被當成指標傳遞，並且可能需要以不安全的程式碼操作。
+  main.cpp
+G:\VSProject\Sudoku\Sudoku\PlayerInformation.h(39,15): warning C4490: 'override': 覆寫規範使用不當，'Sudoku::PlayerInformation::CompareTo' 與基底 ref 類別方法不符
+G:\VSProject\Sudoku\Sudoku\PlayerInformation.h(39,15): message : 必須有來自 ref 類別的相符基底類別，才允許使用 'new' 或 'override'
+G:\VSProject\Sudoku\Sudoku\PlayerInformation.h(39,15): message : 相符基底方法 'System::IComparable<Sudoku::PlayerInformation ^>::CompareTo' 是來自介面類別 (不是 ref 類別)
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  正在產生程式碼...
+  Sudoku.vcxproj -> G:\VSProject\Sudoku\Release\Sudoku.exe

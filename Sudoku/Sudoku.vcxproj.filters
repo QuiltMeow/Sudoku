@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="來源檔案">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="產生器">
+      <UniqueIdentifier>{35d9dfba-67c8-4de8-bab5-be9b183d7f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="遊戲">
+      <UniqueIdentifier>{1b38c48c-b8e7-40c9-b5b5-1c9475390131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="主控台">
+      <UniqueIdentifier>{83385d8e-bf27-41ea-8ee4-6da5574be662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="備用">
+      <UniqueIdentifier>{5156f042-637e-4182-8606-2f0805ce0314}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardBox.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardGenerator.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardSolver.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardPoker.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="MirrorBoardPoker.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuWorker.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratorType.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratorInformation.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStatus.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuTable.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneraterBoard.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuLocation.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuLevel.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreBoard.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInformation.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreBoardForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratorForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Akatsukible.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>遊戲</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="EWException.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="LogEvent.h">
+      <Filter>產生器</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultDialog.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuTool.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceHandler.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleHelper.h">
+      <Filter>主控台</Filter>
+    </ClInclude>
+    <ClInclude Include="AES.h">
+      <Filter>備用</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashForm.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="AESKey.h">
+      <Filter>備用</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_1.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_2.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_3.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_4.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_5.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_6.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_7.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_8.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_9.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_10.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_11.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\PauseTable.jpg">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\PauseStatus.png">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\PlayStatus.png">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\Background_12.png">
+      <Filter>資源檔</Filter>
+    </Image>
+    <Image Include="Resource\OriginIcon.png">
+      <Filter>資源檔</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Skin.she" />
+    <CopyFileToFolders Include="Cursor.cur">
+      <Filter>資源檔</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="IdleBGM.mp3" />
+    <CopyFileToFolders Include="PlayBGM.mp3" />
+    <CopyFileToFolders Include="SkinH_Net.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GameResource.resx">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resource\Font.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resource\GameOver.wav">
+      <Filter>資源檔</Filter>
+    </Media>
+    <Media Include="Resource\NewRecord.wav">
+      <Filter>資源檔</Filter>
+    </Media>
+    <Media Include="Resource\Right.wav">
+      <Filter>資源檔</Filter>
+    </Media>
+    <Media Include="Resource\Wrong.wav">
+      <Filter>資源檔</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
